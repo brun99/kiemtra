@@ -23,9 +23,6 @@ public class MyStringBuilder {
         return "MyStringBuilder{" + "str=" + str + '}';
     }
     
-    
-    
-    
     public static class Builder{
         String str = "";
         

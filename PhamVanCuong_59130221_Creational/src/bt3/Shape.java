@@ -11,6 +11,14 @@ package bt3;
  */
 public abstract class Shape {
      String brush, paper, frame;
-
+     int count;
+     
+    public int getCount(){
+         return count;
+    }
+     
+    public void setCount(int count){
+        this.count = count;
+    }
     public abstract String draw();
 }

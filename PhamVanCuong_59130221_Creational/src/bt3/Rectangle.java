@@ -12,24 +12,13 @@ package bt3;
 public class Rectangle extends Shape{
 
     private static Rectangle instance;
-    int count;
 
-    public Rectangle() {
-    }
-    
-    
     public static Rectangle createRectangle(){
         if(instance==null)
             instance= new Rectangle();
         return instance;
     }
-    public int getCount(){
-         return count;
-     }
-     
-     public void setCount(int count){
-         this.count = count;
-     }
+
     @Override
     public String draw() {
         return "hình tam giác:";

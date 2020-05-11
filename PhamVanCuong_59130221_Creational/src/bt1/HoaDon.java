@@ -16,17 +16,11 @@ public class HoaDon {
     HoaDonHeader hdh;
     ArrayList<CTHD> ds = new ArrayList<>();
     
-    public HoaDon(Builder builder){
+    protected HoaDon(Builder builder){
         this.hdh = builder.hdh;
         this.ds = builder.ds;
     }
 
-    /**
-     *
-     * @return
-     */
-   
-    
     
     public static class Builder{
         HoaDonHeader hdh;

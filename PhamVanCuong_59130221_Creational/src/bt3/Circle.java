@@ -12,25 +12,13 @@ package bt3;
 public class Circle extends Shape{
     
     private static Circle instance;
-    int count;
 
-    public Circle() {
-    }
-    
-    
     public static Circle createCircle(){
         if(instance==null)
             instance= new Circle();
         return instance;
     }
-    public int getCount(){
-         return count;
-     }
-     
-     public void setCount(int count){
-         this.count = count;
-     }
-     
+
     @Override
     public String draw() {
         return "hình tròn:";

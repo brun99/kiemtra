@@ -19,6 +19,5 @@ public class Main {
                 .addBool(true)
                 .Builder();
         System.out.println(myStr.toString());
-                
     }
 }

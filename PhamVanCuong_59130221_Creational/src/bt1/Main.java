@@ -12,7 +12,16 @@ import java.text.SimpleDateFormat;
  */
 public class Main {
     public static void main(String[] args) throws ParseException {
-        HoaDonHeader HD = new HoaDonHeader("HD001", new SimpleDateFormat("dd/mm/yyyy").parse("10/05/1999"), "Pham Van Cuong" );
+        HoaDonHeader hdh = new HoaDonHeader("HD001","Pham Van Cuong", new SimpleDateFormat("dd/mm/yyyy").parse("10/05/1999"));
+        CTHD cthd1 = new CTHD("tai nghe",1,90000,0.02);
+        CTHD cthd2 = new CTHD("dây sạc iphone",2,300000,0.5);
+        
+        HoaDon hd = new HoaDon.Builder()
+                .addHoaDonHeader(hdh)
+                .addCTHD(cthd1)
+                .addCTHD(cthd2)
+                .builder();
+        System.out.println(hd.toString());
         
     }
 }

@@ -9,6 +9,12 @@ package bt3;
  *
  * @author Cuong Pham
  */
-public enum ShapeType {
-    Circle, Rectandle, Triangle
+public class Main {
+    public static void main(String[] args) {
+        ShapeFactory sf = new ShapeFactory();
+        
+        Shape s1 = sf.createShape(ShapeType.Circle);
+        
+        
+    }
 }

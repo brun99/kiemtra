@@ -11,9 +11,28 @@ package bt3;
  */
 public class Triangle extends Shape{
 
+    private static Triangle instance;
+    int count;
+
+    public Triangle() {
+    }
+    
+    
+    public static Triangle createTriangle(){
+        if(instance==null)
+            instance= new Triangle();
+        return instance;
+    }
+    public int getCount(){
+         return count;
+     }
+     
+     public void setCount(int count){
+         this.count = count;
+     }
     @Override
     public String draw() {
-        return 1;
+        return "hình tam giác:";
     }
     
 }

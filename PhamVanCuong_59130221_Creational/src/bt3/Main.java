@@ -11,21 +11,18 @@ package bt3;
  */
 public class Main {
     public static void main(String[] args) {
-        ShapeFactory sf = new ShapeFactory();
+        ShapeFactory SF = ShapeFactory.createInstance();
         
-        //hình tròn 
-        Shape s1 = sf.createShape(ShapeType.Circle);
-        s1.setCount(10);
-        System.out.println("giá trị count của hình tròn :" + s1.getCount());
+        SF.setType(ShapeType.Circle);
+        Shape s1 = SF.createShape();
+        System.out.println("hình 1:" + s1.draw());
         
-        //hình tam giác
-        Shape s2 = sf.createShape(ShapeType.Rectandle);
-        s2.setCount(20);
-        System.out.println("giá trị count của tam giác :" + s2.getCount());
+        SF.setType(ShapeType.Rectandle);
+        Shape s2 = SF.createShape();
+        System.out.println("hình 2:" + s2.draw());
         
-        //hình chữ nhật 
-        Shape s3 = sf.createShape(ShapeType.Triangle);
-        s3.setCount(30);
-        System.out.println("giá trị count của hình chữ nhật :" + s3.getCount());
+        SF.setType(ShapeType.Triangle);
+        Shape s3 = SF.createShape();
+        System.out.println("hình 3:" + s3.draw());
     }
 }

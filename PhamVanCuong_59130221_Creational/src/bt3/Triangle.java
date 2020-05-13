@@ -11,17 +11,10 @@ package bt3;
  */
 public class Triangle extends Shape{
 
-    private static Triangle instance;
-    
-    public static Triangle createTriangle(){
-        if(instance==null)
-            instance= new Triangle();
-        return instance;
-    }
     
     @Override
     public String draw() {
-        return "hình tam giác:";
+        return "hình tam giác";
     }
     
 }

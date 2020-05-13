@@ -10,18 +10,13 @@ package bt3;
  * @author Cuong Pham
  */
 public class Circle extends Shape{
-    
-    private static Circle instance;
-
-    public static Circle createCircle(){
-        if(instance==null)
-            instance= new Circle();
-        return instance;
+     
+    public Circle() {
     }
-
+    
     @Override
     public String draw() {
-        return "hình tròn:";
+        return "hình tròn" ;
     }
     
 }

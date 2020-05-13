@@ -11,17 +11,12 @@ package bt3;
  */
 public class Rectangle extends Shape{
 
-    private static Rectangle instance;
-
-    public static Rectangle createRectangle(){
-        if(instance==null)
-            instance= new Rectangle();
-        return instance;
+    public Rectangle() {
     }
 
     @Override
     public String draw() {
-        return "hình tam giác:";
+        return "Hình chữ nhật";
     }
     
 }

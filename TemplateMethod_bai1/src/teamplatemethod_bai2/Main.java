@@ -23,17 +23,16 @@ public class Main {
     SortCollection<product> sort1 = new SortProductByName();
     sort1.sort(list);
     
-    System.out.println("sắp xếp theo tên: \n");
+    System.out.println("sắp xếp theo tên:");
     for(int i = 0 ; i < list.size(); i++)
         System.out.println(list.get(i).getName()+"|" + list.get(i).getPrice() + "|" + list.get(i).getQuanlity()+"\n");
         
     SortCollection<product> sort2 = new SortProductByPrice();
     sort2.sort(list);
     
-    System.out.println("sắp xếp theo giá: \n");
+    System.out.println("sắp xếp theo giá:");
     for(int i = 0 ; i < list.size(); i++)
             System.out.println(list.get(i).getName()+"|" + list.get(i).getPrice() + "|" + list.get(i).getQuanlity()+"\n");
-        
     }
     
 }

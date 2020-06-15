@@ -30,6 +30,5 @@ public abstract class CaffeineBeverage {
     
     protected abstract void addCondiments();
     
-    
-   
+
 }

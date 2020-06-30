@@ -12,9 +12,16 @@ package bt3;
 public class Triangle extends Shape{
 
     
+    public Triangle() {
+        brush += "vẽ hình tam giác \n";
+    }
+
     @Override
     public String draw() {
-        return "hình tam giác";
+        brush += "bút chì \n";
+        paper += "giấy ô ly \n";
+        frame += "khung gỗ";
+        return brush + paper + frame;
     }
     
 }

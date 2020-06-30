@@ -12,11 +12,15 @@ package bt3;
 public class Circle extends Shape{
      
     public Circle() {
+        brush += "vẽ hình tròn \n";
     }
-    
+
     @Override
     public String draw() {
-        return "hình tròn" ;
+        brush += "bút bi \n";
+        paper += "giấy ô ly \n";
+        frame += "khung tròn";
+        return brush + paper + frame;
     }
     
 }

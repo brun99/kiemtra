@@ -8,10 +8,7 @@ package bt1;
 import bt2.MyStringBuilder.Builder;
 import java.util.ArrayList;
 
-/**
- *
- * @author Cuong Pham
- */
+
 public class HoaDon {
     HoaDonHeader hdh;
     ArrayList<CTHD> ds = new ArrayList<>();

@@ -12,11 +12,15 @@ package bt3;
 public class Rectangle extends Shape{
 
     public Rectangle() {
+        brush += "vẽ hình chữ nhật \n";
     }
 
     @Override
     public String draw() {
-        return "Hình chữ nhật";
+        brush += "bút chì \n";
+        paper += "giấy ô ly \n";
+        frame += "khung gỗ";
+        return brush + paper + frame;
     }
     
 }

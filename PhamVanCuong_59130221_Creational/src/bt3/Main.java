@@ -11,18 +11,30 @@ package bt3;
  */
 public class Main {
     public static void main(String[] args) {
-        ShapeFactory SF = ShapeFactory.createInstance();
+        ShapeFactory hinh1 = ShapeFactory.createInstance();
+        ShapeFactory hinh2 = ShapeFactory.createInstance();
+        ShapeFactory hinh3 = ShapeFactory.createInstance();
         
-        SF.setType(ShapeType.Circle);
-        Shape s1 = SF.createShape();
-        System.out.println("hình 1:" + s1.draw());
         
-        SF.setType(ShapeType.Rectandle);
-        Shape s2 = SF.createShape();
-        System.out.println("hình 2:" + s2.draw());
+        hinh1.setType(ShapeType.Circle);
+        Shape h1 = hinh1.createShape();
+        System.out.println("\n" + h1.draw());
         
-        SF.setType(ShapeType.Triangle);
-        Shape s3 = SF.createShape();
-        System.out.println("hình 3:" + s3.draw());
+        hinh2.setType(ShapeType.Rectandle);
+        h1 = hinh1.createShape();
+        Shape h2 = hinh2.createShape();
+        System.out.println("\n" + h1.draw());
+        System.out.println("\n" + h2.draw());
+        
+        hinh3.setType(ShapeType.Triangle);
+        
+        Shape h3 = hinh3.createShape();
+        h1 = hinh1.createShape();
+        h2 = hinh2.createShape();
+        System.out.println("\n" + h1.draw());
+        System.out.println("\n" + h2.draw());
+        System.out.println("\n" + h3.draw());
+        
+        
     }
 }

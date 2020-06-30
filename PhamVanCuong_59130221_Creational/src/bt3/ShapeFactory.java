@@ -12,12 +12,14 @@ package bt3;
 public class ShapeFactory {
     ShapeType type;
 
+    public ShapeType getType() {
+        return type;
+    }
+
     public void setType(ShapeType type) {
         this.type = type;
     }
-    
-    public ShapeFactory() {
-    }
+
 
     private static ShapeFactory instance;
 
@@ -28,7 +30,7 @@ public class ShapeFactory {
     }
     
     public Shape createShape() {
-        switch(type)
+        switch(this.type)
         {
             case Circle: return new Circle();
             case Triangle: return new Triangle();
